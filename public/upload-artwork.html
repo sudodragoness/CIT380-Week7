@@ -1,0 +1,19 @@
+<!-- File input and upload button -->
+<input type="file" id="file-input" multiple>
+<button id="upload-button">Upload</button>
+<form id="upload-form">
+  <!-- form fields here -->
+</form>
+<!-- Redirect to art gallery page after successful upload -->
+<script type="module">
+  const uploadForm = document.getElementById('upload-form');
+  uploadForm.addEventListener('submit', (e) => {
+    e.preventDefault();
+    // Upload artwork here
+    // ...
+    // Redirect to art gallery page
+    window.location.href = 'art-gallery.html';
+  });
+  
+</script>
+<script type="module" src="./fileupload/upload.js"></script>
